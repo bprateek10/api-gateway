@@ -1,0 +1,12 @@
+require: rubocop-rails
+AllCops:
+  NewCops: enable
+  TargetRubyVersion: 3.3.5
+  TargetRailsVersion: 7.1.4
+  Exclude: 
+    - 'db/schema.rb'
+    - 'bin/**/*'
+    - 'db/seed.rb'
+Style/Documentation:
+  Exclude:
+    - 'db/migrate/*'

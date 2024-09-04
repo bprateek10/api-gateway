@@ -1,5 +1,7 @@
-require_relative "boot"
-require "rails/all"
+# frozen_string_literal: true
+
+require_relative 'boot'
+require 'rails/all'
 
 # We want Rails model generator to use FactoryBot to create factory file stubs whenever we generate a new model
 require 'factory_bot_rails'
@@ -9,14 +11,14 @@ require 'factory_bot_rails'
 Bundler.require(*Rails.groups)
 
 module ApiGateway
-  class Application < Rails::Application
+  class Application < Rails::Application # rubocop:disable Style/Documentation
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 7.1
 
     # Please, add to the `ignore` list any other `lib` subdirectories that do
     # not contain `.rb` files, or that should not be reloaded or eager loaded.
     # Common ones are `templates`, `generators`, or `middleware`, for example.
-    config.autoload_lib(ignore: %w(assets tasks))
+    config.autoload_lib(ignore: %w[assets tasks])
 
     # Configuration for the application, engines, and railties goes here.
     #

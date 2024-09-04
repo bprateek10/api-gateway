@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 source 'https://rubygems.org'
 
 ruby '3.3.5'
@@ -18,6 +20,7 @@ gem 'tzinfo-data', platforms: %i[windows jruby]
 group :development do
   gem 'annotate'
   gem 'rubocop', require: false
+  gem 'rubocop-rails', require: false
 end
 
 group :test do
