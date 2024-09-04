@@ -38,3 +38,5 @@
 
 /config/credentials/test.key
 coverage
+
+.vscode

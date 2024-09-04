@@ -1,23 +1,23 @@
-source "https://rubygems.org"
+source 'https://rubygems.org'
 
-ruby "3.3.5"
+ruby '3.3.5'
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
-gem "rails", "~> 7.1.4"
+gem 'rails', '~> 7.1.4'
 
 gem 'bcrypt'
 gem 'jwt'
 gem 'pg'
-gem "puma", ">= 5.0"
+gem 'puma', '>= 5.0'
 
-gem "redis"
-gem "tzinfo-data", platforms: %i[ windows jruby ]
-gem "bootsnap", require: false
-gem "rack-cors"
-
+gem 'bootsnap', require: false
+gem 'rack-cors'
+gem 'redis'
+gem 'tzinfo-data', platforms: %i[windows jruby]
 
 group :development do
   gem 'annotate'
+  gem 'rubocop', require: false
 end
 
 group :test do
