@@ -19,11 +19,8 @@ PreCommit:
   RuboCop:
     enabled: true
     on_warn: fail # Treat all warnings as failures
-PrePush:
   RSpec:
-    enabled: false
-    required_executable: 'rspec'
-
+    enabled: true
 CommitMsg:
   CapitalizedSubject:
     enabled: false
