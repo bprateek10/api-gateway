@@ -19,6 +19,7 @@ gem 'tzinfo-data', platforms: %i[windows jruby]
 
 group :development do
   gem 'annotate'
+  gem 'overcommit'
   gem 'rubocop', require: false
   gem 'rubocop-rails', require: false
 end
